@@ -1,0 +1,11 @@
+{
+  "name": "employee-management-system",
+  "version": "1.0.0",
+  "description": "An API that let's users perform CRUD operations on Employees in a Company.",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kutluhan Duman",
+  "license": "ISC"
+}
