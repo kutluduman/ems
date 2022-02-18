@@ -4,6 +4,9 @@ import cors from "cors";
 import { connect } from "mongoose";
 
 import config from "./config";
+import auth from "./middleware/auth";
+import AuthRouter from "./routes/auth";
+import EmployeeRouter from "./routes/employee";
 
 const app = express();
 const { MONGO_URI, MONGO_DB_NAME, PORT } = config;
@@ -19,10 +22,12 @@ connect(db) // Adding new mongo url parser
   .then(() => console.log("MongoDB Connected..."))
   .catch((err) => console.log(err));
 
-  app.get("/", (req: Request, res: Response) => {
-    res.send("Hello World!");
-  });
+app.get("/", (req: Request, res: Response) => {
+  res.send("Hello World!");
+});
+app.use("/api/auth", AuthRouter);
+app.use("/api/employees", auth, EmployeeRouter);  
 
-  app.listen(PORT, () => {
-    return console.log(`Express is listening at http://localhost:${PORT}`);
-  });
+app.listen(PORT, () => {
+  return console.log(`Express is listening at http://localhost:${PORT}`);
+});
