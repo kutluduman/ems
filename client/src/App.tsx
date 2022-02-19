@@ -1,11 +1,16 @@
-import React from 'react';
-import './App.css';
+import Router from "./routes";
+import ThemeConfig from "./theme";
+import GlobalStyles from "./theme/globalStyles";
+import ScrollToTop from "./components/ScrollToTop";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
+    <ThemeConfig>
+      <ScrollToTop />
+      <GlobalStyles />
+      <Router />
+    </ThemeConfig>
   );
 }
 
