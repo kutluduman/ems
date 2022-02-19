@@ -63,10 +63,10 @@ const Register = () => {
         <ContentStyle>
           <Box sx={{ mb: 5 }}>
             <Typography variant="h4" gutterBottom>
-              Get started absolutely free.
+              Register
             </Typography>
             <Typography sx={{ color: "text.secondary" }}>
-              Free forever. No credit card needed.
+              Easily Register and Enjoy using the portal!
             </Typography>
           </Box>
 

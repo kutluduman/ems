@@ -43,7 +43,7 @@ const Login = () => {
           component={RouterLink}
           to="/register"
         >
-          Get started
+          Create an Account
         </Link>
       </AuthLayout>
 
@@ -63,7 +63,7 @@ const Login = () => {
         <ContentStyle>
           <Stack sx={{ mb: 5 }}>
             <Typography variant="h4" gutterBottom>
-              Sign in to EMS
+              Sign In
             </Typography>
             <Typography sx={{ color: "text.secondary" }}>
               Enter your details below.
@@ -76,7 +76,7 @@ const Login = () => {
             <Typography variant="body2" align="center" sx={{ mt: 3 }}>
               Don’t have an account?&nbsp;
               <Link variant="subtitle2" component={RouterLink} to="register">
-                Get started
+              Create an Account
               </Link>
             </Typography>
           </MHidden>
