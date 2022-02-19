@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountPopover Component renders the AccountPopover Component 1`] = `
+<button
+  className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-k2yn7a-MuiButtonBase-root-MuiIconButton-root"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onContextMenu={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <div
+    className="MuiAvatar-root MuiAvatar-circular css-1wlk0hk-MuiAvatar-root"
+  >
+    <img
+      alt="photoURL"
+      className="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+      src="https://minimal-kit-react.vercel.app/static/mock-images/avatars/avatar_default.jpg"
+    />
+  </div>
+</button>
+`;

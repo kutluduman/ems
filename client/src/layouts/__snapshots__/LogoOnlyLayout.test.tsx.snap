@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogoOnlyLayout Component renders the LogoOnlyLayout Component 1`] = `
+<header
+  className="css-z2vd3n"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      className="MuiBox-root css-1ngw63v"
+      src="https://minimal-kit-react.vercel.app/static/logo.svg"
+    />
+  </a>
+</header>
+`;
