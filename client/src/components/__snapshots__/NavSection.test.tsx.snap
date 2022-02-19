@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavSection Component renders the NavSection Component 1`] = `
+<div
+  className="MuiBox-root css-0"
+  open={true}
+>
+  <ul
+    className="MuiList-root css-1mk9mw3-MuiList-root"
+  />
+</div>
+`;

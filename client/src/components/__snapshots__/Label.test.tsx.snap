@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label Component renders the Label Component 1`] = `
+<span
+  className="css-1oiafrx"
+>
+  Label Text
+</span>
+`;

@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo Component renders the Logo Component 1`] = `
+<img
+  className="MuiBox-root css-1ngw63v"
+  src="https://minimal-kit-react.vercel.app/static/logo.svg"
+/>
+`;
