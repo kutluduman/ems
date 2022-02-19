@@ -1,6 +1,7 @@
 import { getMockReq, getMockRes } from "@jest-mock/express";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+import { AuthenticatedRequest } from "../../interfaces/AuthenticatedRequest";
 
 import Employee from "../../models/Employee";
 import { login, register, employee } from "../auth";
@@ -470,7 +471,7 @@ describe("Auth Controller", () => {
       const { res: mockRes } = getMockRes();
 
       // Act
-      await employee(mockReq, mockRes);
+      await employee(mockReq as AuthenticatedRequest, mockRes);
 
       // Assert
       expect(findByIdSpy).toBeCalledWith(FIND_BY_ID_MOCK._id);
@@ -494,7 +495,7 @@ describe("Auth Controller", () => {
       const { res: mockRes } = getMockRes();
 
       // Act
-      await employee(mockReq, mockRes);
+      await employee(mockReq as AuthenticatedRequest, mockRes);
 
       // Assert
       expect(findByIdSpy).toBeCalledWith(FIND_BY_ID_MOCK._id);
