@@ -1,5 +1,7 @@
 import { getMockReq, getMockRes } from "@jest-mock/express";
 import jwt from "jsonwebtoken";
+
+import { AuthenticatedRequest } from "../../interfaces/AuthenticatedRequest";
 import Auth from "../auth";
 import { TOKEN_MOCK } from "./auth.mock";
 
@@ -10,11 +12,11 @@ describe("Auth Middleware", () => {
 
   test("should return error with status 401 if the request don't have an Authorization header", async () => {
     // Arrange
-    const mockReq : any = getMockReq();
+    const mockReq = getMockReq();
     const { res: mockRes, next } = getMockRes();
 
     // Act
-    await Auth(mockReq, mockRes, next);
+    await Auth(mockReq as AuthenticatedRequest, mockRes, next);
 
     // Assert\
     expect(mockRes.status).toHaveBeenCalledWith(401);
@@ -25,20 +27,24 @@ describe("Auth Middleware", () => {
 
   test("should successfully call next method if token is valid", async () => {
     // Arrange
-    const mockReq : any = getMockReq({
+    const mockReq = getMockReq({
       headers: {
         Authorization: TOKEN_MOCK,
       },
     });
+    const jestReqMock = jest
+      .spyOn(mockReq, "header")
+      .mockReturnValue(TOKEN_MOCK);
     const jwtVerifySpy = jest
       .spyOn(jwt, "verify")
       .mockResolvedValue({ id: "sdfjhgsfhj" });
     const { res: mockRes, next } = getMockRes();
 
     // Act
-    await Auth(mockReq, mockRes, next);
+    await Auth(mockReq as AuthenticatedRequest, mockRes, next);
 
-    // Assert
+    // Assert\
+    expect(jestReqMock).toHaveBeenCalledWith("Authorization");
     expect(jwtVerifySpy).toHaveBeenCalledTimes(1);
     expect(next).toHaveBeenCalledTimes(1);
   });

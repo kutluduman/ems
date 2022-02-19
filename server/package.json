@@ -5,8 +5,8 @@
   "main": "dist/app.js",
   "scripts": {
     "test": "jest",
-    "start": "concurrently \"tsc --watch\" \"nodemon dist/app.js\"",
-    "serve": "tsc && node dist/app.js",
+    "serve": "concurrently \"tsc --watch\" \"nodemon dist/app.js\"",
+    "start": "tsc && node dist/app.js",
     "test:unit": "ENV_FILE=./src/config/.env.test jest"
   },
   "author": "Kutluhan Duman",
