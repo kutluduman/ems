@@ -2,4 +2,12 @@
 // allows you to do things like:
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
-import '@testing-library/jest-dom';
+import "@testing-library/jest-dom/extend-expect";
+
+jest.mock("react-dom", () => {
+  const original = jest.requireActual("react-dom");
+  return {
+    ...original,
+    createPortal: (node: any) => node,
+  };
+});
