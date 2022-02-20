@@ -79,7 +79,7 @@ const Login = () => {
       <MHidden width={Width.mdDown}>
         <SectionStyle>
           <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-            Welcome Back
+            Welcome Back!
           </Typography>
           <PageIllustration src={LoginIllustration} alt="login" />
         </SectionStyle>
