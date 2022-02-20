@@ -46,7 +46,7 @@ export const getLoggedInUserAsync = createAsyncThunk(
 const postAuthSuccess = (
   state: AuthState,
   { payload: { token, employee, msg } }: PayloadAction<AuthResponse>
-) {
+) => {
   state.status = AsyncStatus.IDLE;
   state.employee = employee;
   state.error = msg;
