@@ -5,6 +5,7 @@ import Stack from "@mui/material/Stack";
 import Toolbar from "@mui/material/Toolbar";
 
 import AccountPopover from "./AccountPopover";
+import Logo from "../../components/Logo";
 
 const DRAWER_WIDTH = 280;
 const APPBAR_MOBILE = 64;
@@ -14,10 +15,8 @@ const RootStyle = styled(AppBar)(({ theme }) => ({
   boxShadow: "none",
   backdropFilter: "blur(6px)",
   WebkitBackdropFilter: "blur(6px)", // Fix on Mobile
-  backgroundColor: alpha(theme.palette.background.default, 0.72),
-  [theme.breakpoints.up("lg")]: {
-    width: `calc(100% - ${DRAWER_WIDTH + 1}px)`,
-  },
+  backgroundColor: '#2c7da0',
+
 }));
 
 const ToolbarStyle = styled(Toolbar)(({ theme }) => ({
@@ -32,6 +31,7 @@ const DashboardNavbar = () => {
   return (
     <RootStyle>
       <ToolbarStyle>
+        <Logo/>
         <Box sx={{ flexGrow: 1 }} />
         <Stack
           direction="row"
