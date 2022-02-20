@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogoOnlyLayout Component renders the LogoOnlyLayout Component 1`] = `
+<header
+  className="css-z2vd3n"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  />
+</header>
+`;

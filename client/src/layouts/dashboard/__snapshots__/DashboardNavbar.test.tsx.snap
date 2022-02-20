@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardNavbar Component renders the DashboardNavbar Component 1`] = `
+<header
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-hvn0sn-MuiPaper-root-MuiAppBar-root"
+>
+  <div
+    className="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-47ifef-MuiToolbar-root"
+  >
+    <img
+      className="MuiBox-root css-1ngw63v"
+      src="logo.svg"
+    />
+    <div
+      className="MuiBox-root css-i9gxme"
+    />
+    <div
+      className="css-j4k7zp-MuiStack-root"
+    >
+      <button
+        className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-k2yn7a-MuiButtonBase-root-MuiIconButton-root"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <div
+          className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1knm3nf-MuiAvatar-root"
+        >
+          uu
+        </div>
+      </button>
+    </div>
+  </div>
+</header>
+`;

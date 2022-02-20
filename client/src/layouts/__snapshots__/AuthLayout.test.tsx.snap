@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthLayout Component renders the AuthLayout Component 1`] = `
+<header
+  className="css-103o8ot"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      className="MuiBox-root css-1ngw63v"
+      src="logo.svg"
+    />
+  </a>
+  <p
+    className="MuiTypography-root MuiTypography-body2 css-p34ji4-MuiTypography-root"
+  >
+    <h1>
+      Some content
+    </h1>
+  </p>
+</header>
+`;
