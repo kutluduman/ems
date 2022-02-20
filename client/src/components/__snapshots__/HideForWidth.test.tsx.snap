@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HideForWidth Component renders the HideForWidth Component 1`] = `
+<h1>
+  Some Content
+</h1>
+`;

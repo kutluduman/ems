@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScrollBar Component renders the ScrollBar Component 1`] = `
+<div
+  className="css-jjtu05"
+>
+  <div
+    className="css-wkgdtb"
+    data-simplebar={true}
+    title="ScrollBar Title"
+  >
+    <div
+      className="simplebar-wrapper"
+    >
+      <div
+        className="simplebar-height-auto-observer-wrapper"
+      >
+        <div
+          className="simplebar-height-auto-observer"
+        />
+      </div>
+      <div
+        className="simplebar-mask"
+      >
+        <div
+          className="simplebar-offset"
+        >
+          <div
+            className="simplebar-content-wrapper"
+          >
+            <div
+              className="simplebar-content"
+            >
+              <h1>
+                Employee
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="simplebar-placeholder"
+      />
+    </div>
+    <div
+      className="simplebar-track simplebar-horizontal"
+    >
+      <div
+        className="simplebar-scrollbar"
+      />
+    </div>
+    <div
+      className="simplebar-track simplebar-vertical"
+    >
+      <div
+        className="simplebar-scrollbar"
+      />
+    </div>
+  </div>
+</div>
+`;

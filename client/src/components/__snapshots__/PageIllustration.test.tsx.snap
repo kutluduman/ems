@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageIllustration Component renders the PageIllustration Component 1`] = `
+<img
+  alt="some alt"
+  className="css-14z6jlm"
+  src="some source"
+/>
+`;

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserAvatar Component renders the UserAvatar Component 1`] = `
+<div
+  className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-16za3gy-MuiAvatar-root"
+>
+  JD
+</div>
+`;
