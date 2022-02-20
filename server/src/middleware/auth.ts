@@ -11,7 +11,7 @@ export default (
   res: Response,
   next: NextFunction
 ) => {
-  const token = req.headers.Authorization;
+  const token = req.header("Authorization");
 
   // Check for token
   if (!token)
