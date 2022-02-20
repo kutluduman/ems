@@ -8,7 +8,7 @@
 * Navigate to the server directory with one of the terminal window and with the other terminal window navigate to client directory
 * Run npm install from both of these terminal windows
 * After packages are installed, you can run npm start from both terminal windows to run the frontend and backend
-* You can run npm run test from both of the server and client terminal windows to run the tests
+* You can run npm test from both of the server and client terminal windows to run the tests
 * The app runs from the browser: localhost:3000 port
 * The backend runs from the localhost:5000 port
 * IMPORTANT NOTE: Both frontend and backend should run at the same time so that the app works
